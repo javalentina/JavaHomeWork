@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 
 public class Main {
@@ -49,7 +49,7 @@ public class Main {
          * */
 
         List<Person> removeDuplicates = listOfPerson.stream()
-                .distinct().collect(Collectors.toList());
+                .distinct().toList();
         System.out.println("Removed duplicates: " + removeDuplicates);
 
         /*
